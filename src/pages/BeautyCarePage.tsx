@@ -6,6 +6,7 @@ import {
   ShieldCheck, 
   Clock, 
   Star,
+  Stars,
   Sparkles,
   Heart,
   Leaf,
@@ -15,7 +16,9 @@ import {
   ThumbsUp,
   FlaskConical,
   Droplet,
-  PackageCheck
+  PackageCheck,
+  Hand,
+  Shield
 } from "lucide-react";
 import {
   Card,
@@ -297,28 +300,28 @@ export default function BeautyCarePage() {
             >
               <div className="flex items-start mb-6">
                 <div className="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Star className="text-secondary" />
+                  <Sun className="text-secondary w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                    <Sun className="text-secondary w-5 h-5" />
+                    <Sparkles className="text-secondary w-5 h-5" />
                     Morning (Day Use)
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Droplet className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Cleanse your face.</span>
                     </li>
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Heart className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Apply a small amount of BIDUA Beauty Cream under the eyes and on dark spots.</span>
                     </li>
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Hand className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Massage gently until fully absorbed.</span>
                     </li>
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Shield className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Follow up with sunscreen for daytime protection.</span>
                     </li>
                   </ul>
@@ -335,28 +338,28 @@ export default function BeautyCarePage() {
             >
               <div className="flex items-start mb-6">
                 <div className="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Star className="text-secondary" />
+                  <Moon className="text-secondary w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                    <Moon className="text-secondary w-5 h-5" />
+                    <Stars className="text-secondary w-5 h-5" />
                     Night (Night Use)
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Droplet className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Cleanse your face.</span>
                     </li>
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Heart className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Apply a thin, even layer of cream over the targeted areas.</span>
                     </li>
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Moon className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Leave it overnight without washing.</span>
                     </li>
                     <li className="flex items-start">
-                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <Sparkles className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
                       <span>Wake up to nourished, rejuvenated skin.</span>
                     </li>
                   </ul>
