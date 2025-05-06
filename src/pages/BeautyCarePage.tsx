@@ -146,8 +146,8 @@ export default function BeautyCarePage() {
                       <div className="font-semibold flex items-center gap-2">
                         <PackageCheck className="w-4 h-4 text-secondary" />
                         Packaging:
+                      </div>
                       <div>Premium, Travel-Friendly Jar with Inner Seal Protection</div>
-                    </div>
                     
                     <div className="pt-2">
                       <p className="font-semibold flex items-center">
