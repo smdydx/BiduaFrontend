@@ -3,8 +3,8 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import video1 from "@/assets/1.mp4"; 
-import video2 from "@/assets/Hotel.mp4"
+import video1 from "@/assets/bidua.mp4";
+import video2 from "@/assets/Hotel.mp4";
 import video3 from "@/assets/Beauty care.mp4";
 import video4 from "@/assets/IT Connect2.mp4";
 
@@ -72,7 +72,10 @@ export function HeroSlider() {
             muted
             loop
             playsInline
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover z-0"
+            onLoadStart={(e) => e.currentTarget.style.opacity = '0'}
+            onCanPlay={(e) => e.currentTarget.style.opacity = '1'}
           />
         ) : (
           <div
