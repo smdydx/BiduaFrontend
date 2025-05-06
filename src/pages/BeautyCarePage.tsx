@@ -130,32 +130,33 @@ export default function BeautyCarePage() {
                         Size:
                       </div>
                       <div>50 Grams Jar</div>
-                      
+
                       <div className="font-semibold flex items-center gap-2">
                         <ThumbsUp className="w-4 h-4 text-secondary" />
                         MRP:
                       </div>
                       <div>₹1,499/- (Inclusive of All Taxes)</div>
-                      
+
                       <div className="font-semibold flex items-center gap-2">
                         <Clock className="w-4 h-4 text-secondary" />
                         Shelf Life:
                       </div>
                       <div>24 months</div>
-                      
+
                       <div className="font-semibold flex items-center gap-2">
                         <PackageCheck className="w-4 h-4 text-secondary" />
                         Packaging:
                       </div>
                       <div>Premium, Travel-Friendly Jar with Inner Seal Protection</div>
-                    
+                    </div>
+
                     <div className="pt-2">
                       <p className="font-semibold flex items-center">
                         <Check className="text-secondary mr-2 h-5 w-5" />
                         Designed for 30–45 days of regular use (Day and Night).
                       </p>
                     </div>
-                    
+
                     <div className="pt-4">
                       <Button size="lg" className="w-full">
                         Shop Now
@@ -404,7 +405,7 @@ export default function BeautyCarePage() {
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute h-full w-0.5 bg-secondary left-1/2 transform -translate-x-1/2"></div>
-              
+
               {/* Timeline Items */}
               {[
                 {
