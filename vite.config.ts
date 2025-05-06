@@ -12,7 +12,7 @@ export default defineConfig({
       clientPort: 443,
       host: true
     },
-    allowedHosts: ["f43878c2-715a-4211-ada3-a328786ee884-00-169g3fvsqn4a9.pike.replit.dev"]
+    allowedHosts: ["a9705172-2ffd-4245-9b58-2f7cb303fe57-00-324kpszqylnwp.sisko.replit.dev"]
   },
   plugins: [react(), runtimeErrorOverlay()],
   resolve: {
