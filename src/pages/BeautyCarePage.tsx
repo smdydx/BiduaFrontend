@@ -1,7 +1,22 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
-import { Check, ShieldCheck, Clock, Star } from "lucide-react";
+import { 
+  Check, 
+  ShieldCheck, 
+  Clock, 
+  Star,
+  Sparkles,
+  Heart,
+  Leaf,
+  Sun,
+  Moon,
+  Award,
+  ThumbsUp,
+  FlaskConical,
+  Droplet,
+  PackageCheck
+} from "lucide-react";
 import {
   Card,
   CardContent,
@@ -107,16 +122,27 @@ export default function BeautyCarePage() {
                 <CardContent>
                   <div className="space-y-4">
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="font-semibold">Size:</div>
+                      <div className="font-semibold flex items-center gap-2">
+                        <PackageCheck className="w-4 h-4 text-secondary" />
+                        Size:
+                      </div>
                       <div>50 Grams Jar</div>
                       
-                      <div className="font-semibold">MRP:</div>
+                      <div className="font-semibold flex items-center gap-2">
+                        <ThumbsUp className="w-4 h-4 text-secondary" />
+                        MRP:
+                      </div>
                       <div>₹1,499/- (Inclusive of All Taxes)</div>
                       
-                      <div className="font-semibold">Shelf Life:</div>
+                      <div className="font-semibold flex items-center gap-2">
+                        <Clock className="w-4 h-4 text-secondary" />
+                        Shelf Life:
+                      </div>
                       <div>24 months</div>
                       
-                      <div className="font-semibold">Packaging:</div>
+                      <div className="font-semibold flex items-center gap-2">
+                        <PackageCheck className="w-4 h-4 text-secondary" />
+                        Packaging:
                       <div>Premium, Travel-Friendly Jar with Inner Seal Protection</div>
                     </div>
                     
@@ -171,8 +197,8 @@ export default function BeautyCarePage() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="bg-card p-6 rounded-lg"
               >
-                <div className="flex items-start">
-                  <Check className="text-secondary mr-3 mt-1 flex-shrink-0" />
+                <div className="flex items-start bg-card/50 p-4 rounded-lg hover:bg-card/70 transition-colors">
+                  <Sparkles className="text-secondary mr-3 mt-1 flex-shrink-0 w-5 h-5" />
                   <p className="text-lg">{benefit}</p>
                 </div>
               </motion.div>
@@ -233,9 +259,12 @@ export default function BeautyCarePage() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="bg-card bg-opacity-50 p-6 rounded-lg flex items-start"
               >
-                <Star className="text-secondary mt-1 mr-3 flex-shrink-0" />
+                <Leaf className="text-secondary mt-1 mr-3 flex-shrink-0 w-6 h-6" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">{ingredient.name}</h3>
+                  <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                    {ingredient.name}
+                    <FlaskConical className="w-4 h-4 text-secondary" />
+                  </h3>
                   <p>{ingredient.description}</p>
                 </div>
               </motion.div>
@@ -271,7 +300,10 @@ export default function BeautyCarePage() {
                   <Star className="text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Morning (Day Use)</h3>
+                  <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                    <Sun className="text-secondary w-5 h-5" />
+                    Morning (Day Use)
+                  </h3>
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
@@ -306,7 +338,10 @@ export default function BeautyCarePage() {
                   <Star className="text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Night (Night Use)</h3>
+                  <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                    <Moon className="text-secondary w-5 h-5" />
+                    Night (Night Use)
+                  </h3>
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
