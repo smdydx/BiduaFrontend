@@ -5,6 +5,7 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  assetsInclude: ['**/*.jpeg'],
   server: {
     host: "0.0.0.0",
     port: 5173,
