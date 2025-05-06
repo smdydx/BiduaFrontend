@@ -1,10 +1,14 @@
+
 import { motion } from "framer-motion";
 import { 
-  Factory, 
+  Building2, 
   Globe, 
   Award, 
   Users, 
-  Rocket 
+  Rocket,
+  Shield,
+  Clock,
+  HeartHandshake
 } from "lucide-react";
 
 interface FeatureCardProps {
@@ -35,7 +39,7 @@ function FeatureCard({ icon: Icon, title, description, index }: FeatureCardProps
 export function WhyChooseUs() {
   const features = [
     {
-      icon: Factory,
+      icon: Building2,
       title: "Multi-Industry Innovation Platform",
       description: "We operate across diverse industries, bringing innovation and excellence to every sector we touch."
     },
@@ -46,18 +50,23 @@ export function WhyChooseUs() {
     },
     {
       icon: Award,
-      title: "Quality Commitment and Transparency",
+      title: "Quality Commitment",
       description: "We maintain the highest standards of quality and transparency in all our products and services."
     },
     {
-      icon: Users,
-      title: "Customer-First and Business-First Philosophy",
-      description: "Our dual focus ensures we deliver value to both customers and business partners alike."
+      icon: HeartHandshake,
+      title: "Customer-First Philosophy",
+      description: "Our focus ensures we deliver value to both customers and business partners alike."
     },
     {
-      icon: Rocket,
-      title: "Future-Ready Solutions",
-      description: "We leverage cutting-edge technologies like Blockchain, AI, Cloud, and Decentralization to stay ahead of the curve."
+      icon: Shield,
+      title: "Trusted Security",
+      description: "Your safety and security are our top priorities across all our services."
+    },
+    {
+      icon: Clock,
+      title: "Fast Response Time",
+      description: "We ensure quick and efficient service delivery for all our customers."
     }
   ];
 
@@ -68,7 +77,7 @@ export function WhyChooseUs() {
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose BIDUA?</h2>

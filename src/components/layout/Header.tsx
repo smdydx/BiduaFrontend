@@ -174,11 +174,11 @@ export function Header() {
               <DollarSign className="w-4 h-4" /> Invest in Naploo™
             </Button>
           </Link>
-          <a href="#contact" className="block">
+          <Link href="/contact" className="block">
             <Button className="w-full flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" /> Contact Us
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
