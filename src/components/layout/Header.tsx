@@ -27,8 +27,8 @@ export function Header() {
   const [showMobileUpcoming, setShowMobileUpcoming] = useState(false);
   const [showMobileBidua, setShowMobileBidua] = useState(false);
   const [showSubMenu, setShowSubMenu] = useState<string | null>(null);
-  
-  
+
+
 
 
   const isScrolled = scrollY > 50;
@@ -231,7 +231,7 @@ export function Header() {
                   <Link href="/oem-solutions" className="flex items-center hover:text-secondary"><FaIndustry className="w-4 h-4 mr-2" /> OEM Solution</Link>
                   <Link href="/cloud-drive" className="flex items-center hover:text-secondary"><FaCloudUploadAlt className="w-4 h-4 mr-2" /> Cloud Drive</Link>
 
-                 
+
                 </div>
               )}
                {/* BIDUA Ventures inside Upcoming */}

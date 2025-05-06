@@ -61,7 +61,7 @@ function Router() {
       <Route path="/it-connect" component={ITConnectPage} />
       <Route path="/investor" component={InvestorPage} />
       <Route path="/auth" component={AuthPage} />
-      <Route path="/bidua-venture" component={BiduaVenturePage} />
+      <Route path="/bidua-ventures" component={BiduaVenturePage} />
       <Route path="/human-verification" component={HumanVerification} />
 
       {/* Admin Routes - Protected */}
