@@ -1,22 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
-import {
-  Check,
-  ShieldCheck,
-  Star,
-  Leaf,
-  Heart,
-  Award,
-  Sparkles,
-  Droplet,
-  Sun,
-  AlarmClock,
-  ShieldPlus,
-  HeartHandshake,
-  ShoppingBag,
-  ArrowRight
-} from "lucide-react";
+import { Check, ShieldCheck, Clock, Star } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -24,23 +9,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 export default function BeautyCarePage() {
   return (
     <>
       <Helmet>
-        <title>BIDUA Beauty Care – Premium Skincare Solutions | BIDUA Industries</title>
+        <title>BIDUA Beauty Care – Dark Circle & Dark Spot Removal Cream | BIDUA Industries</title>
         <meta name="description" content="Premium skincare products designed to deliver visible results safely and gently. Our Dark Circle & Dark Spot Removal Cream helps fade imperfections and illuminate your natural tone." />
+        <meta name="keywords" content="BIDUA Beauty, dark circle cream, dark spot removal, skincare, natural skincare, beauty products" />
       </Helmet>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-background to-primary/20">
+      <section className="pt-24 pb-16 bg-gradient-to-b from-background to-primary">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -48,45 +28,37 @@ export default function BeautyCarePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Premium Skincare
-              </span>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-green-600">BIDUA Beauty Care</span>
+                <span className="text-secondary">BIDUA Beauty Care</span>
               </h1>
               <h2 className="text-xl md:text-2xl mb-8 font-light">
-                Natural Beauty, Enhanced Confidence
+                Beauty That Heals Naturally. Confidence That Shines Bright.
               </h2>
-              <p className="text-lg mb-8 text-muted-foreground">
-                Experience the perfect blend of nature and science in our premium skincare solutions.
+              <p className="text-lg mb-8">
+                At BIDUA Beauty, we are committed to enhancing your natural beauty through science, nature, and innovation.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                  Shop Now <ShoppingBag className="ml-2 h-5 w-5" />
-                </Button>
-                <Button size="lg" variant="outline">
-                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
+              <p className="text-lg mb-10">
+                Our premium skincare range is designed to deliver visible results safely and gently — every single day.
+              </p>
+              <Button size="lg">Shop BIDUA Beauty</Button>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="rounded-2xl overflow-hidden shadow-2xl"
+              className="rounded-xl overflow-hidden shadow-xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1200&q=80" 
-                alt="BIDUA Beauty Care Premium Products" 
-                className="w-full h-[600px] object-cover hover:scale-105 transition-transform duration-300"
+                src="https://images.unsplash.com/photo-1612817288484-6f916006741a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+                alt="BIDUA Beauty Care Products" 
+                className="w-full h-full object-cover"
               />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Grid */}
+      {/* Featured Product Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div 
@@ -96,32 +68,100 @@ export default function BeautyCarePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose BIDUA Beauty?</h2>
-            <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Featured Product</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p className="text-xl font-light max-w-3xl mx-auto">
+              BIDUA Beauty Dark Circle & Dark Spot Removal Cream
+            </p>
+            <p className="mt-4 text-lg italic max-w-2xl mx-auto">
+              "Fade Imperfections. Illuminate Your Natural Tone — Day and Night."
+            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-xl overflow-hidden"
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1567721913486-6585f069b332?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" 
+                alt="Dark Circle & Dark Spot Removal Cream" 
+                className="w-full object-cover rounded-lg"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card>
+                <CardHeader>
+                  <CardTitle>Product Details</CardTitle>
+                  <CardDescription>BIDUA Beauty Dark Circle & Dark Spot Removal Cream</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="font-semibold">Size:</div>
+                      <div>50 Grams Jar</div>
+                      
+                      <div className="font-semibold">MRP:</div>
+                      <div>₹1,499/- (Inclusive of All Taxes)</div>
+                      
+                      <div className="font-semibold">Shelf Life:</div>
+                      <div>24 months</div>
+                      
+                      <div className="font-semibold">Packaging:</div>
+                      <div>Premium, Travel-Friendly Jar with Inner Seal Protection</div>
+                    </div>
+                    
+                    <div className="pt-2">
+                      <p className="font-semibold flex items-center">
+                        <Check className="text-secondary mr-2 h-5 w-5" />
+                        Designed for 30–45 days of regular use (Day and Night).
+                      </p>
+                    </div>
+                    
+                    <div className="pt-4">
+                      <Button size="lg" className="w-full">
+                        Shop Now
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Benefits Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-primary">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Key Benefits</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                icon: <Leaf className="h-8 w-8 text-green-600" />,
-                title: "Natural Ingredients",
-                description: "100% natural and organic ingredients sourced responsibly"
-              },
-              {
-                icon: <ShieldCheck className="h-8 w-8 text-green-600" />,
-                title: "Dermatologist Tested",
-                description: "Clinically proven formulas safe for all skin types"
-              },
-              {
-                icon: <Heart className="h-8 w-8 text-green-600" />,
-                title: "Cruelty Free",
-                description: "Never tested on animals, always ethically made"
-              },
-              {
-                icon: <Award className="h-8 w-8 text-green-600" />,
-                title: "Premium Quality",
-                description: "Highest grade ingredients and formulations"
-              }
+              "Reduces dark circles under the eyes",
+              "Lightens dark spots and pigmentation",
+              "Evens out skin tone by reducing melanin production",
+              "Boosts hydration and skin nourishment",
+              "Promotes natural brightness and glow",
+              "Strengthens skin to reduce future damage"
             ].map((benefit, index) => (
               <motion.div
                 key={index}
@@ -129,14 +169,11 @@ export default function BeautyCarePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-card p-6 rounded-xl hover:shadow-lg transition-shadow"
+                className="bg-card p-6 rounded-lg"
               >
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="p-3 bg-green-100 rounded-full">
-                    {benefit.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold">{benefit.title}</h3>
-                  <p className="text-muted-foreground">{benefit.description}</p>
+                <div className="flex items-start">
+                  <Check className="text-secondary mr-3 mt-1 flex-shrink-0" />
+                  <p className="text-lg">{benefit}</p>
                 </div>
               </motion.div>
             ))}
@@ -144,55 +181,7 @@ export default function BeautyCarePage() {
         </div>
       </section>
 
-      {/* Product Features */}
-      <section className="py-20 bg-gradient-to-b from-background to-green-50">
-        <div className="container mx-auto px-4">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Key Features</h2>
-            <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Droplet className="h-6 w-6 text-green-600" />,
-                title: "Deep Hydration",
-                description: "Provides 24-hour moisture retention"
-              },
-              {
-                icon: <Sun className="h-6 w-6 text-green-600" />,
-                title: "Dark Spot Reduction",
-                description: "Visibly reduces dark spots and pigmentation"
-              },
-              {
-                icon: <AlarmClock className="h-6 w-6 text-green-600" />,
-                title: "Quick Results",
-                description: "See visible results in just 2 weeks"
-              }
-            ].map((feature, index) => (
-              <Card key={index} className="border-green-200">
-                <CardHeader>
-                  <div className="flex items-center space-x-4">
-                    {feature.icon}
-                    <CardTitle>{feature.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
+      {/* Ingredients Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div 
@@ -202,56 +191,369 @@ export default function BeautyCarePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
-            <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Key Ingredients</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p className="text-lg max-w-3xl mx-auto">
+              Our formula combines scientifically proven ingredients to deliver visible results.
+            </p>
           </motion.div>
 
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible>
-              <AccordionItem value="item-1">
-                <AccordionTrigger>How long until I see results?</AccordionTrigger>
-                <AccordionContent>
-                  Most users report visible improvements within 2-4 weeks of consistent use. For best results, use the product twice daily as directed.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger>Is it suitable for sensitive skin?</AccordionTrigger>
-                <AccordionContent>
-                  Yes, our products are dermatologically tested and suitable for all skin types, including sensitive skin. However, we recommend doing a patch test before first use.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger>Are your products cruelty-free?</AccordionTrigger>
-                <AccordionContent>
-                  Absolutely! We never test on animals and are committed to ethical beauty practices. All our products are 100% cruelty-free.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger>What's your return policy?</AccordionTrigger>
-                <AccordionContent>
-                  We offer a 30-day satisfaction guarantee. If you're not completely satisfied, contact our customer service for a full refund.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                name: "Niacinamide (Vitamin B3)",
+                description: "Evens out skin tone and fades pigmentation"
+              },
+              {
+                name: "Kojic Acid",
+                description: "Gently inhibits melanin production"
+              },
+              {
+                name: "Vitamin C Extracts",
+                description: "Brightens and revitalizes dull skin"
+              },
+              {
+                name: "Hyaluronic Acid",
+                description: "Deep hydration for plump, fresh skin"
+              },
+              {
+                name: "Licorice Root Extract",
+                description: "Natural soothing agent and complexion booster"
+              },
+              {
+                name: "Aloe Vera & Cucumber Extracts",
+                description: "Refreshes and calms tired skin"
+              }
+            ].map((ingredient, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="bg-card bg-opacity-50 p-6 rounded-lg flex items-start"
+              >
+                <Star className="text-secondary mt-1 mr-3 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">{ingredient.name}</h3>
+                  <p>{ingredient.description}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-green-600">
+      {/* Usage Instructions Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-primary">
         <div className="container mx-auto px-4">
           <motion.div 
-            className="text-center text-white"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Start Your Beauty Journey Today</h2>
-            <p className="text-xl mb-8">Experience the BIDUA difference with our premium skincare solutions</p>
-            <Button size="lg" variant="secondary" className="text-green-600">
-              Shop Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">How to Use</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-card rounded-xl p-8"
+            >
+              <div className="flex items-start mb-6">
+                <div className="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Star className="text-secondary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Morning (Day Use)</h3>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Cleanse your face.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Apply a small amount of BIDUA Beauty Cream under the eyes and on dark spots.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Massage gently until fully absorbed.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Follow up with sunscreen for daytime protection.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-card rounded-xl p-8"
+            >
+              <div className="flex items-start mb-6">
+                <div className="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <Star className="text-secondary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Night (Night Use)</h3>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Cleanse your face.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Apply a thin, even layer of cream over the targeted areas.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Leave it overnight without washing.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                      <span>Wake up to nourished, rejuvenated skin.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex justify-center mt-10"
+          >
+            <div className="bg-primary bg-opacity-30 px-6 py-4 rounded-lg inline-flex items-center">
+              <Clock className="text-secondary mr-3" />
+              <p className="text-lg font-semibold">Daily Use Recommended — for best results, use morning and night continuously.</p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Results Timeline Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Expected Visible Results</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p className="text-lg max-w-3xl mx-auto">
+              Results may vary slightly based on individual skin type.
+            </p>
+          </motion.div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute h-full w-0.5 bg-secondary left-1/2 transform -translate-x-1/2"></div>
+              
+              {/* Timeline Items */}
+              {[
+                {
+                  time: "2 Weeks",
+                  changes: "Improved hydration and softness"
+                },
+                {
+                  time: "4 Weeks",
+                  changes: "Noticeable fading of dark circles and dark spots"
+                },
+                {
+                  time: "6–8 Weeks",
+                  changes: "Balanced, even-toned skin and brighter complexion"
+                },
+                {
+                  time: "10+ Weeks",
+                  changes: "Naturally radiant, healthy-looking skin"
+                }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.2 }}
+                  className="relative flex items-center mb-12 last:mb-0"
+                >
+                  <div className="w-1/2 pr-8 md:pr-16 text-right">
+                    <h3 className="text-xl font-bold text-secondary">{item.time}</h3>
+                  </div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-secondary rounded-full flex items-center justify-center z-10">
+                    <div className="w-5 h-5 bg-background rounded-full"></div>
+                  </div>
+                  <div className="w-1/2 pl-8 md:pl-16">
+                    <p className="text-lg">{item.changes}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Suitable For Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-primary">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Suitable For</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-card rounded-xl p-8"
+            >
+              <h3 className="text-xl font-bold mb-6">Skin Types</h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {["Normal", "Dry", "Oily", "Combination", "Sensitive"].map((type, index) => (
+                  <li key={index} className="flex items-center">
+                    <Check className="text-secondary mr-2 flex-shrink-0 h-5 w-5" />
+                    <span>{type}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-card rounded-xl p-8"
+            >
+              <h3 className="text-xl font-bold mb-6">Skin Concerns</h3>
+              <ul className="space-y-2">
+                {[
+                  "Dark circles under eyes",
+                  "Acne marks, dark spots",
+                  "Uneven skin tone",
+                  "Stress-induced dullness",
+                  "Post-sun exposure pigmentation"
+                ].map((concern, index) => (
+                  <li key={index} className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0 h-5 w-5" />
+                    <span>{concern}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-12 text-center"
+          >
+            <p className="text-lg mb-4">Suitable for men and women of all ages.</p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Quality Commitment Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Quality Commitment</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                label: "100% Dermatologist Tested",
+                description: "Approved by skin experts"
+              },
+              {
+                label: "No Parabens, No Sulphates, No Mineral Oil",
+                description: "Free from harmful chemicals"
+              },
+              {
+                label: "No Harsh Chemicals",
+                description: "Gentle on all skin types"
+              },
+              {
+                label: "Cruelty-Free",
+                description: "Never tested on animals"
+              },
+              {
+                label: "Proudly Made in India",
+                description: "Supporting local production"
+              }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="bg-card bg-opacity-50 p-6 rounded-lg flex items-start"
+              >
+                <ShieldCheck className="text-secondary mt-1 mr-3 flex-shrink-0" />
+                <div>
+                  <h3 className="font-bold mb-1">{item.label}</h3>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="max-w-3xl mx-auto text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Reveal Your True Glow?</h2>
+            <p className="text-xl mb-10">
+              Special Launch Offers: Buy 2, Get 1 Free – Limited Period
+            </p>
+            <Button size="lg" variant="secondary">Shop Now</Button>
+            <p className="mt-12 text-lg font-semibold">
+              BIDUA Beauty – Day and Night Care for Your Natural Glow.
+            </p>
           </motion.div>
         </div>
       </section>
