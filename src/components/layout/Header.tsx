@@ -138,9 +138,6 @@ export function Header() {
             <Link href="/cloud-drive" className="flex items-center px-2 py-1 hover:text-secondary">
               <FaCloudUploadAlt className="w-4 h-4 mr-2" /> Cloud Drive
             </Link>
-            <Link href="/bidua-ventures" className="flex items-center px-2 py-1 hover:text-secondary">
-              <Briefcase className="w-4 h-4 mr-2" /> BIDUA Ventures
-            </Link>
           </div>
         )}
       </div>
