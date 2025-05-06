@@ -232,7 +232,7 @@ export default function BiduaVenturesPage() {
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Visit to the given address</li>
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Live photo + video capture</li>
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> ID proof validation (if provided)</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Report uploaded to your secure dashboard within 48 hours</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Report uploaded within 48 hours</li>
               </ul>
             </div>
 
@@ -260,20 +260,21 @@ export default function BiduaVenturesPage() {
               <h3 className="text-lg font-semibold flex items-center gap-2">
                 <Users className="w-5 h-5 text-green-500" /> Who Needs It
               </h3>
-              <ul className="mt-2 space-y-2">
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Families hiring maids, nannies, cooks, drivers</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Businesses hiring contract workers, helpers</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Landlords verifying tenants</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Offices vetting staff, peons, interns</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Individuals verifying house buyers/sellers</li>
+              <ul className="mt-2 grid grid-cols-2 gap-2">
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Families hiring help</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Businesses & offices</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Landlords</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Property buyers/sellers</li>
               </ul>
             </div>
           </div>
 
           <DialogFooter>
-            <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg">
-              Book Verification Now – ₹999
-            </Button>
+            <Link href="/human-verification">
+              <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg">
+                Book Verification Now – ₹999
+              </Button>
+            </Link>
           </DialogFooter>
         </DialogContent>
       </Dialog>
