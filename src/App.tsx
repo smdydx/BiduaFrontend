@@ -13,6 +13,7 @@ import InvestorPage from "@/pages/InvestorPage";
 import AuthPage from "./pages/AuthPage";
 import BiduaVenturePage from "@/pages/BiduaVenturePage";
 import HumanVerification from "@/pages/HumanVerification";
+import ContactPage from "@/pages/ContactPage";
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -63,7 +64,6 @@ function Router() {
       <Route path="/auth" component={AuthPage} />
       <Route path="/bidua-ventures" component={BiduaVenturePage} />
       <Route path="/human-verification" component={HumanVerification} />
-      <Route path="/contact" component={ContactPage} />
       <Route path="/contact" component={ContactPage} />
 
       {/* Admin Routes - Protected */}
