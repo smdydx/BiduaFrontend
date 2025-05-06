@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { 
-  FaUserShield, FaCogs, FaShoppingCart, FaHospital, 
-  FaLeaf, FaGraduationCap, FaBuilding, FaCarBattery, 
-  FaLightbulb 
+  FaUserShield, FaCogs, FaShoppingCart, FaHotel, 
+  FaHospital, FaLeaf, FaGraduationCap, FaBuilding, 
+  FaCar, FaLightbulb 
 } from "react-icons/fa";
 import {
   Card,
@@ -27,11 +27,11 @@ export default function BiduaVenturesPage() {
     {
       title: "Retail & E-Commerce",
       icon: <FaShoppingCart />,
-      items: ["B2B/B2C Portal", "Amazon/Flipkart Listings Support", "Grocery at Door", "Buy-Sell Portal (Saree, Cars, Gifts)", "Used Car Dealership"]
+      items: ["B2B/B2C Portal", "Amazon/Flipkart Listings Support", "Grocery at Door", "Buy-Sell Portal (Saree, Cars, Gifts)", "Used Car Dealership", "Return Gift Listings"]
     },
     {
       title: "Hospitality & Lifestyle",
-      icon: <FaHospital />,
+      icon: <FaHotel />,
       items: ["Sleeping Pod Chain Hotels", "Bed & Breakfast Pods", "Hotels on Lease", "Oxygen Bar", "Video Business Cards", "Transparent LED Visiting Card"]
     },
     {
@@ -56,7 +56,7 @@ export default function BiduaVenturesPage() {
     },
     {
       title: "Mobility & Energy",
-      icon: <FaCarBattery />,
+      icon: <FaCar />,
       items: ["Train-Based Electricity Systems", "Self-Rotating Magnetic Motor", "Wireless 5G Powerbank Dongles", "Chassis Number Engravers", "Recharge Portal, Smart Travel Devices"]
     },
     {
@@ -96,22 +96,12 @@ export default function BiduaVenturesPage() {
         </div>
       </section>
 
-      {/* Vision Section */}
+      {/* Why BIDUA Section */}
       <section className="py-16 text-center bg-green-950 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
-          <p className="max-w-3xl mx-auto text-lg">
-            To empower India through a unified platform that revolutionizes sectors via sustainable innovation.
-          </p>
-        </div>
-      </section>
-
-      {/* Why BIDUA */}
-      <section className="py-16 text-center">
-        <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Why BIDUA?</h2>
-          <p className="max-w-4xl mx-auto text-lg md:text-xl">
-            "We don't just build businesses, we build ecosystems."<br />
+          <p className="text-xl md:text-2xl font-semibold mb-4">"We don't just build businesses, we build ecosystems."</p>
+          <p className="max-w-4xl mx-auto text-lg">
             BIDUA is more than a company — it's a visionary force spanning 100+ business models in innovation, inclusion, infrastructure, and impact.
           </p>
         </div>
