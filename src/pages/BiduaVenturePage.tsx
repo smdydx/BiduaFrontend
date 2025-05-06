@@ -261,36 +261,6 @@ export default function BiduaVenturesPage() {
             </div>
           </div>
 
-          {/* FAQ */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              {[
-                {
-                  q: "Is this service available in my area?",
-                  a: "Yes! We cover all major cities, towns, and even remote locations across India."
-                },
-                {
-                  q: "How long does it take?",
-                  a: "Reports are typically ready within 24–48 hours."
-                },
-                {
-                  q: "Will I get photo or video?",
-                  a: "Yes. We share photos and a short video of the person at the address."
-                },
-                {
-                  q: "Can I verify multiple people?",
-                  a: "Yes, you can submit separate bookings for each individual."
-                }
-              ].map((faq, index) => (
-                <div key={index} className="bg-black/40 border border-green-800 rounded-lg p-6">
-                  <h3 className="text-lg font-bold mb-2">{faq.q}</h3>
-                  <p className="text-muted-foreground">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">Start Verifying with BIDUA Today</h2>
@@ -411,6 +381,38 @@ export default function BiduaVenturesPage() {
             <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl">
               Contact Support
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto space-y-6">
+            {[
+              {
+                q: "Is this service available in my area?",
+                a: "Yes! We cover all major cities, towns, and even remote locations across India."
+              },
+              {
+                q: "How long does it take?",
+                a: "Reports are typically ready within 24–48 hours."
+              },
+              {
+                q: "Will I get photo or video?",
+                a: "Yes. We share photos and a short video of the person at the address."
+              },
+              {
+                q: "Can I verify multiple people?",
+                a: "Yes, you can submit separate bookings for each individual."
+              }
+            ].map((faq, index) => (
+              <div key={index} className="bg-black/40 border border-green-800 rounded-lg p-6">
+                <h3 className="text-lg font-bold mb-2">{faq.q}</h3>
+                <p className="text-muted-foreground">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
