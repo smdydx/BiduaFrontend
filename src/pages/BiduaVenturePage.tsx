@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { 
-  FaUserShield, FaCogs, FaShoppingCart, FaHotel, 
-  FaHospital, FaLeaf, FaGraduationCap, FaBuilding, 
-  FaCar, FaLightbulb 
+  FaUserShield, FaBuilding, FaIndustry, FaHotel, 
+  FaHospital, FaLeaf, FaGraduationCap, FaShoppingCart, 
+  FaCar, FaUsers 
 } from "react-icons/fa";
 import {
   Card,
@@ -15,62 +15,122 @@ import {
 export default function BiduaVenturesPage() {
   const categories = [
     { 
-      title: "Safety & Verification",
+      title: "Domestic Staff Verification",
       icon: <FaUserShield />,
-      items: ["Human Verification (maids, tenants, employees)", "DNA-based Family Tracing", "Maid/Cook/Driver Services", "Mobile Anti-Theft App", "OBIDUA Authentication Code"]
+      items: [
+        "Maid Background Verification",
+        "Cook & Chef Verification",
+        "Driver Background Checks",
+        "Domestic Helper Validation",
+        "House Staff ID Authentication"
+      ]
     },
     {
-      title: "Blockchain & Tech",
-      icon: <FaCogs />,
-      items: ["Peer-to-Peer Fundraising over Blockchain", "Crypto-based Lottery", "Tokenized Points & Crypto Exchange", "Hosting & Server Services", "Secure Gadget & File App"]
-    },
-    {
-      title: "Retail & E-Commerce",
-      icon: <FaShoppingCart />,
-      items: ["B2B/B2C Portal", "Amazon/Flipkart Listings Support", "Grocery at Door", "Buy-Sell Portal (Saree, Cars, Gifts)", "Used Car Dealership", "Return Gift Listings"]
-    },
-    {
-      title: "Hospitality & Lifestyle",
-      icon: <FaHotel />,
-      items: ["Sleeping Pod Chain Hotels", "Bed & Breakfast Pods", "Hotels on Lease", "Oxygen Bar", "Video Business Cards", "Transparent LED Visiting Card"]
-    },
-    {
-      title: "Health & Wellness",
-      icon: <FaHospital />,
-      items: ["Old Age Homes", "Alzheimer Patient Care", "Bio Diesel", "Health, Obesity, Nutrition Services", "Elixir Crystal Water Bottles"]
-    },
-    {
-      title: "Agri & Plantation",
-      icon: <FaLeaf />,
-      items: ["Vanilla, Mahogany, Neem, Sandalwood", "Aeroponic Farming", "Pyramid Energy Farms", "Kantola, Kalimirch Farming", "Veg Direct from Farm App"]
-    },
-    {
-      title: "Education & Social",
-      icon: <FaGraduationCap />,
-      items: ["Rural Kids Parks", "Play School Chain", "NGO for Organ Donation", "Educational Access to Remote India"]
-    },
-    {
-      title: "Engineering & Infrastructure",
+      title: "Corporate Employee Verification",
       icon: <FaBuilding />,
-      items: ["Vertical Farming, Eco-Friendly AC", "Silicon Bricks, Pyramid Structures", "Automatic Lehenga Folder", "Wall-Mounted Bicycle Stand", "Concrete Cressers, Tyre-Based Bricks"]
+      items: [
+        "Employee Background Checks",
+        "Contract Worker Verification",
+        "Office Staff Validation",
+        "Professional Reference Checks",
+        "Employment History Verification"
+      ]
     },
     {
-      title: "Mobility & Energy",
+      title: "Retail & Business Verification",
+      icon: <FaShoppingCart />,
+      items: [
+        "Vendor Authentication",
+        "Supplier Background Checks",
+        "Business Partner Verification",
+        "Distributor Validation",
+        "Merchant ID Verification"
+      ]
+    },
+    {
+      title: "Hospitality Staff Verification",
+      icon: <FaHotel />,
+      items: [
+        "Hotel Staff Background Checks",
+        "Restaurant Employee Verification",
+        "Service Staff Validation",
+        "Hospitality Worker Screening",
+        "Tourism Staff Authentication"
+      ]
+    },
+    {
+      title: "Healthcare Staff Verification",
+      icon: <FaHospital />,
+      items: [
+        "Medical Staff Validation",
+        "Caregiver Background Checks",
+        "Nursing Staff Verification",
+        "Healthcare Worker Screening",
+        "Medical Assistant Authentication"
+      ]
+    },
+    {
+      title: "Agricultural Worker Verification",
+      icon: <FaLeaf />,
+      items: [
+        "Farm Labor Verification",
+        "Agricultural Staff Screening",
+        "Plantation Worker Validation",
+        "Farming Staff Background Checks",
+        "Seasonal Worker Authentication"
+      ]
+    },
+    {
+      title: "Education Sector Verification",
+      icon: <FaGraduationCap />,
+      items: [
+        "Teacher Background Verification",
+        "School Staff Validation",
+        "Education Worker Screening",
+        "Tutor Authentication",
+        "Support Staff Background Checks"
+      ]
+    },
+    {
+      title: "Industrial Worker Verification",
+      icon: <FaIndustry />,
+      items: [
+        "Factory Worker Validation",
+        "Industrial Staff Screening",
+        "Manufacturing Employee Checks",
+        "Workshop Staff Verification",
+        "Technical Worker Authentication"
+      ]
+    },
+    {
+      title: "Transport Sector Verification",
       icon: <FaCar />,
-      items: ["Train-Based Electricity Systems", "Self-Rotating Magnetic Motor", "Wireless 5G Powerbank Dongles", "Chassis Number Engravers", "Recharge Portal, Smart Travel Devices"]
+      items: [
+        "Transport Staff Validation",
+        "Driver Background Verification",
+        "Delivery Personnel Screening",
+        "Fleet Staff Authentication",
+        "Logistics Worker Checks"
+      ]
     },
     {
-      title: "Miscellaneous & Future Planning",
-      icon: <FaLightbulb />,
-      items: ["Haunted Video App", "Cats Park Project", "Live QR Code Newspaper", "Wedding Planning App", "Digital Dermatology + Salon Tech"]
+      title: "Tenant Verification Services",
+      icon: <FaUsers />,
+      items: [
+        "Residential Tenant Screening",
+        "Commercial Tenant Verification",
+        "PG Accommodation Checks",
+        "Rental History Validation",
+        "Tenant Background Authentication"
+      ]
     }
   ];
 
   return (
     <main className="bg-gradient-to-br from-black to-green-900 text-white font-sans">
       <Helmet>
-        <title>BIDUA Ventures - One Brand, Limitless Possibilities</title>
-        <meta name="description" content="BIDUA Ventures - From Human Verification to Futuristic Energy, One Platform, One Mission: Empower India" />
+        <title>BIDUA Verification Services - Comprehensive Background Checks</title>
+        <meta name="description" content="BIDUA Verification Services - Ensuring Trust Through Comprehensive Background Checks Across All Sectors" />
       </Helmet>
 
       {/* Hero Section */}
@@ -86,12 +146,12 @@ export default function BiduaVenturesPage() {
         </video>
 
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to BIDUA Ventures</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">BIDUA Verification Services</h1>
           <p className="text-lg md:text-2xl max-w-2xl mb-6">
-            From Human Verification to Futuristic Energy – One Platform, One Mission: Empower India.
+            Comprehensive Background Verification Services Across All Sectors - Building Trust Through Thorough Validation
           </p>
           <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 text-lg rounded-xl">
-            Explore All Ideas
+            Start Verification
           </Button>
         </div>
       </section>
@@ -99,10 +159,10 @@ export default function BiduaVenturesPage() {
       {/* Why BIDUA Section */}
       <section className="py-16 text-center bg-green-950 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Why BIDUA?</h2>
-          <p className="text-xl md:text-2xl font-semibold mb-4">"We don't just build businesses, we build ecosystems."</p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Choose BIDUA?</h2>
+          <p className="text-xl md:text-2xl font-semibold mb-4">"Your Trust Is Our Priority"</p>
           <p className="max-w-4xl mx-auto text-lg">
-            BIDUA is more than a company — it's a visionary force spanning 100+ business models in innovation, inclusion, infrastructure, and impact.
+            BIDUA offers comprehensive verification services with physical visits, document validation, and background checks across all sectors.
           </p>
         </div>
       </section>
@@ -110,7 +170,7 @@ export default function BiduaVenturesPage() {
       {/* Categories Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">Master Categories</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">Verification Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {categories.map((category, idx) => (
               <Card key={idx} className="bg-black/40 border-green-800">
@@ -132,20 +192,16 @@ export default function BiduaVenturesPage() {
       {/* Call to Action */}
       <section className="py-20 text-center bg-gradient-to-t from-black to-green-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Join the Journey</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Start Verification Today</h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-            Want to invest, collaborate, or join our mission?<br />
-            Let's build a future together.
+            Get comprehensive background checks and verification services for any sector.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl">
-              Contact Us
+              Book Verification
             </Button>
             <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl">
-              Pitch Your Startup
-            </Button>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl">
-              Partner with BIDUA
+              Contact Support
             </Button>
           </div>
         </div>
