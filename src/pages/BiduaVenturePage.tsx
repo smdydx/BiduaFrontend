@@ -299,7 +299,7 @@ export default function BiduaVenturesPage() {
             <Shield className="w-5 h-5 mr-2" /> Book Verification Now
           </Button>
         </DialogTrigger>
-        <DialogContent className="max-w-2xl">
+        <DialogContent className="max-w-[95%] md:max-w-2xl h-[90vh] md:h-auto overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold">BIDUA Human Verification – Know Who You're Hiring</DialogTitle>
             <DialogDescription className="text-lg mt-2">
@@ -307,7 +307,7 @@ export default function BiduaVenturesPage() {
             </DialogDescription>
           </DialogHeader>
 
-          <div className="space-y-6 py-4">
+          <div className="space-y-4 md:space-y-6 py-2 md:py-4">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2">
                 <Search className="w-5 h-5 text-green-500" /> What We Offer
@@ -345,7 +345,7 @@ export default function BiduaVenturesPage() {
               <h3 className="text-lg font-semibold flex items-center gap-2">
                 <Users className="w-5 h-5 text-green-500" /> Who Needs It
               </h3>
-              <ul className="mt-2 grid grid-cols-2 gap-2">
+              <ul className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-2">
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Families hiring help</li>
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Businesses & offices</li>
                 <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Landlords</li>
