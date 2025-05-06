@@ -157,6 +157,9 @@ export function Header() {
         </button>
         {showSubMenu === 'future' && (
           <div className="absolute left-full top-0 bg-background shadow-lg border rounded-md w-56 p-2 z-50">
+            <Link href="/bidua-ventures" className="flex items-center px-2 py-1 hover:text-secondary">
+              <Briefcase className="w-4 h-4 mr-2" /> BIDUA Ventures
+            </Link>
             <Link href="/human-verification" className="flex items-center px-2 py-1 hover:text-secondary">
               <FaUserCheck className="w-4 h-4 mr-2" /> Human Verification
             </Link>
