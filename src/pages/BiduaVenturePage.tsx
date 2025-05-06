@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
@@ -187,12 +186,12 @@ export default function BiduaVenturesPage() {
       </section>
 
       {/* Human Verification Service */}
-      <section className="py-16 bg-green-950/20">
+      <section className="py-8 md:py-16 bg-green-950/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Human Verification Service</h2>
-            <p className="text-xl">Stop fraud before it happens. BIDUA verifies your maids, drivers, tenants, or employees physically across India.</p>
-            <Button className="mt-8 bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-xl">
+          <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-5xl font-bold mb-4 md:mb-6">Human Verification Service</h2>
+            <p className="text-lg md:text-xl px-2">Stop fraud before it happens. BIDUA verifies your maids, drivers, tenants, or employees physically across India.</p>
+            <Button className="mt-6 md:mt-8 w-full md:w-auto bg-green-600 hover:bg-green-700 text-white px-4 md:px-8 py-4 md:py-6 text-base md:text-lg rounded-xl">
               Book Now – ₹999 per Person
             </Button>
           </div>
@@ -307,7 +306,7 @@ export default function BiduaVenturesPage() {
               Avoid frauds, thefts, and fake IDs. Let BIDUA physically verify your maids, drivers, tenants, or employees — PAN India.
             </DialogDescription>
           </DialogHeader>
-          
+
           <div className="space-y-6 py-4">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2">
