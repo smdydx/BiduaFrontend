@@ -160,9 +160,6 @@ export function Header() {
             <Link href="/bidua-ventures" className="flex items-center px-2 py-1 hover:text-secondary">
               <Briefcase className="w-4 h-4 mr-2" /> BIDUA Ventures
             </Link>
-            <Link href="/human-verification" className="flex items-center px-2 py-1 hover:text-secondary">
-              <FaUserCheck className="w-4 h-4 mr-2" /> Human Verification
-            </Link>
           </div>
         )}
       </div>
@@ -242,7 +239,6 @@ export function Header() {
                   {showMobileBidua && (
                     <div className="pl-4 space-y-1">
                       <Link href="/bidua-ventures" className="flex items-center hover:text-secondary"><Briefcase className="w-4 h-4 mr-2" /> Go to BIDUA Ventures</Link>
-                      <Link href="/human-verification" className="flex items-center hover:text-secondary"><UserCheck className="w-4 h-4 mr-2" /> Human Verification</Link>
                     </div>
                   )}
             </div>
