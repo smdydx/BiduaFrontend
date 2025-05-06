@@ -63,6 +63,7 @@ function Router() {
       <Route path="/auth" component={AuthPage} />
       <Route path="/bidua-ventures" component={BiduaVenturePage} />
       <Route path="/human-verification" component={HumanVerification} />
+      <Route path="/contact" component={ContactPage} />
 
       {/* Admin Routes - Protected */}
       <ProtectedRoute path="/admin" component={AdminDashboard} adminOnly={true} />
