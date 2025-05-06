@@ -19,6 +19,7 @@ import {
   IndianRupee,
   Settings2,
   Users,
+  AlertTriangle,
 } from "lucide-react";
 import { 
   FaUserShield, FaBuilding, FaIndustry, FaHotel, 
