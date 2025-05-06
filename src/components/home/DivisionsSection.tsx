@@ -73,7 +73,7 @@ export function DivisionsSection() {
     {
       id: "naploo",
       title: "Naploo™ – Sleeping Pod Hotels",
-      image: "/src/assets/NaplooImg/main.jpeg",
+      image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200",
       listItems: [
         "India's First Smart Pod Hotel Chain",
         "Book Pods By Hour (Customer Side)",
@@ -91,7 +91,7 @@ export function DivisionsSection() {
     {
       id: "beauty",
       title: "BIDUA Beauty Care – Skincare & Wellness",
-      image: "/src/assets/NaplooImg/2.jpg",
+      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200",
       listItems: [
         "Premium Day and Night Cream for Dark Circles and Dark Spots",
         "Natural, Safe, Dermatologically Tested Products",
@@ -105,7 +105,7 @@ export function DivisionsSection() {
     {
       id: "clouddrive",
       title: "BIDUA CloudDrive™ – Smart Storage Solutions",
-      image: "/src/assets/NaplooImg/3.jpg",
+      image: "https://images.unsplash.com/photo-1633419461186-7d41ca842469?q=80&w=1200",
       listItems: [
         "Hybrid Storage Device (Offline + Cloud + Sim + WiFi)",
         "Auto-Sync Data on the Move",
@@ -119,7 +119,7 @@ export function DivisionsSection() {
     {
       id: "oem",
       title: "BIDUA OEM Solutions – Manufacturing Hub",
-      image: "/src/assets/NaplooImg/4.jpg",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200",
       listItems: [
         "White-Label and Private Label Solutions",
         "Electronics, FMCG, Beauty, Healthcare, Furniture, Food, Automobiles, and More",
@@ -133,7 +133,7 @@ export function DivisionsSection() {
     {
       id: "it",
       title: "BIDUA IT Connect – B2B Software Portal",
-      image: "/src/assets/NaplooImg/5.jpg",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200",
       listItems: [
         "Pre-made and Custom Software Solutions",
         "Centralized Customer Interaction Model",
