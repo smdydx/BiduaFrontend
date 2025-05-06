@@ -105,7 +105,7 @@ export function DivisionsSection() {
     {
       id: "clouddrive",
       title: "BIDUA CloudDrive™ – Smart Storage Solutions",
-      image: "https://images.unsplash.com/photo-1633419461186-7d41ca842469?q=80&w=1200",
+      image: "https://images.unsplash.com/photo-1618044733300-9472054094ee?q=80&w=1200",
       listItems: [
         "Hybrid Storage Device (Offline + Cloud + Sim + WiFi)",
         "Auto-Sync Data on the Move",
