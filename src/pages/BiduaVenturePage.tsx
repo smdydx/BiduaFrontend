@@ -185,6 +185,121 @@ export default function BiduaVenturesPage() {
         </div>
       </section>
 
+      {/* Human Verification Service */}
+      <section className="py-16 bg-green-950/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Human Verification Service</h2>
+            <p className="text-xl">Stop fraud before it happens. BIDUA verifies your maids, drivers, tenants, or employees physically across India.</p>
+            <Button className="mt-8 bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-xl">
+              Book Now – ₹999 per Person
+            </Button>
+          </div>
+
+          {/* Why Critical */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <Card className="bg-black/40 border-green-800">
+              <CardContent className="p-6 text-center">
+                <Shield className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Fraud Prevention</h3>
+                <p>Thousands of fraud and theft cases by unknown domestic workers and tenants reported each year.</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-black/40 border-green-800">
+              <CardContent className="p-6 text-center">
+                <Users className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Identity Protection</h3>
+                <p>Fake IDs and unverifiable references are common in big cities and small towns alike.</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-black/40 border-green-800">
+              <CardContent className="p-6 text-center">
+                <AlertTriangle className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-3">Risk Mitigation</h3>
+                <p>Hiring blindly puts your family, property, and business at risk.</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* How It Works */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">How It Works</h2>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+              {[
+                "Submit person's details",
+                "Make secure payment",
+                "Field executive visits",
+                "Video & photo proof",
+                "Get verification report"
+              ].map((step, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                    {index + 1}
+                  </div>
+                  <p>{step}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Who Should Use */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Who Should Use This Service?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                "Families hiring maids, nannies, cooks",
+                "Employers recruiting drivers, helpers",
+                "Landlords renting properties",
+                "Offices hiring contract or field staff"
+              ].map((user, index) => (
+                <div key={index} className="text-center p-4">
+                  <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
+                  <p>{user}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* FAQ */}
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              {[
+                {
+                  q: "Is this service available in my area?",
+                  a: "Yes! We cover all major cities, towns, and even remote locations across India."
+                },
+                {
+                  q: "How long does it take?",
+                  a: "Reports are typically ready within 24–48 hours."
+                },
+                {
+                  q: "Will I get photo or video?",
+                  a: "Yes. We share photos and a short video of the person at the address."
+                },
+                {
+                  q: "Can I verify multiple people?",
+                  a: "Yes, you can submit separate bookings for each individual."
+                }
+              ].map((faq, index) => (
+                <div key={index} className="bg-black/40 border border-green-800 rounded-lg p-6">
+                  <h3 className="text-lg font-bold mb-2">{faq.q}</h3>
+                  <p className="text-muted-foreground">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl font-bold mb-6">Start Verifying with BIDUA Today</h2>
+            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-xl">
+              Book Verification Now
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Categories Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
